@@ -12,3 +12,4 @@ C:\Users\Fran\Desktop\DotNet\CsBases\obj\Debug\net10.0\refint\CsBases.dll
 C:\Users\Fran\Desktop\DotNet\CsBases\obj\Debug\net10.0\CsBases.pdb
 C:\Users\Fran\Desktop\DotNet\CsBases\obj\Debug\net10.0\CsBases.genruntimeconfig.cache
 C:\Users\Fran\Desktop\DotNet\CsBases\obj\Debug\net10.0\ref\CsBases.dll
+C:\Users\Fran\Desktop\DotNet\CsBases\obj\Debug\net10.0\CsBases.sourcelink.json
