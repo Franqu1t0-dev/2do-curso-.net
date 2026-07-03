@@ -1,9 +1,11 @@
 namespace CsBases.Fundamentals;
 
-public class Product : Iproduct
+public class Product : IProduct
 {
     public int Id {get;set;}
     public string? Name{get;set;}
+
+    public decimal Price{get;set;}
 
     public bool IsAvailable {get;set;}
 
@@ -22,12 +24,29 @@ public class Product : Iproduct
 
     public void ApplyDiscount(decimal percentage)
     {
-        var disscountAmount=Price*(percentage/100);
+        var discountAmount =Price*(percentage/100);
         Price -= discountAmount;
     }
 
-    public string GetDescription()
+    public virtual string GetDescription()
     {
         return $"{Name} - {Price:C} ";
     }
+
+}
+
+public class ServiceProduct : Product
+{
+    public int DurationInDays { get; set; }
+
+    public ServiceProduct(string name, decimal price, int duration) : base(name, price)
+    {
+        DurationInDays = duration;
+    }
+
+    public override string GetDescription()
+    {
+        return $"{base.GetDescription()} - Duración: {DurationInDays} días";
+    }
+
 }

@@ -1,4 +1,6 @@
-﻿class Program
+﻿using CsBases.Fundamentals;
+using static System.Console;
+class Program
 {
     static void Main()
     {
@@ -13,6 +15,9 @@
 
         WriteLine($"Saludo: {gretting}, Porcentaje: {percentage}");
 
-
+        var laptop=new Product("Laptop",1200);
+        WriteLine(laptop.GetDescription());
+        var soporte=new ServiceProduct("Soporte técnico",300,30);
+        WriteLine(soporte.GetDescription());
     }
 }
