@@ -12,6 +12,7 @@ class Program
         var product=new Product("Mouse Gamer",300);
         var prodcutDto= ProductAdapter.ToDto(product);
         WriteLine($"{prodcutDto.Name} - {prodcutDto.Price} - Código: {prodcutDto.Code}");
+        WriteLine($"hola");
     }
 }
     
